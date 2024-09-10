@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to start the application using Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app.py"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
